@@ -1,0 +1,70 @@
+name: ublue-hyprland
+base-container: ghcr.io/ublue-os/base-main
+fedora-version: 38
+description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
+rpms:
+  - hyprland
+  - waybar-hyprland
+  - xdg-desktop-portal-hyprland
+  - xorg-x11-server-Xwayland
+  - xfce-polkit
+  - greetd
+  - libnotify
+  - thunar
+  - thunar-archive-plugin
+  - udiskie
+  - wlogout
+  - btop
+  - imv
+  - zathura
+  - qt5ct
+  - qt6ct
+  - gtk-murrine-engine
+  - neofetch
+  - mpv
+  - gparted
+  - liveusb-creator
+  - pavucontrol
+  - wev
+  - mako
+  - copyq
+  - yt-dlp
+  - tailscale
+  - xarchiver
+  #- dbus-tools
+  # launchers
+  - wofi
+  - fuzzel
+  # terminals
+  - kitty
+  - alacritty
+  # text editor
+  - helix
+  # yafti deps
+  - python3-pip
+  - libadwaita
+  # virtualisation
+  - virt-install
+  - virt-manager
+  - virt-viewer
+  - libvirt-client
+  - libvirt-daemon-kvm
+  # screenshotting 
+  - grim
+  - slurp
+  - swappy
+  - wf-recorder
+  # sway used to display login greeter, then exit
+  #- sway
+  # nwg-displays & udiskie dep
+  - wlr-randr
+  # udiskie dep
+  - libappindicator
+  
+flatpaks:
+  - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
+  - com.github.tchx84.Flatseal
+  - org.mozilla.firefox
+  - org.xfce.mousepad
+
+

@@ -1,0 +1,32 @@
+# `-l` activates layer-shell mode. Notice that `swaymsg exit` will run after gtkgreet.
+#exec "gtkgreet -l -s /etc/greetd/gtkgreet.css -c Hyprland; swaymsg exit"
+exec "gtkgreet -l -s /etc/greetd/gtk.css -c Hyprland; swaymsg exit"
+#exec "gtkgreet -l -c Hyprland; swaymsg exit"
+
+output DP-3 {
+position 0,0
+scale 0.750000
+}
+
+output DP-1 {
+position 2560,0
+scale 1
+}
+
+output DP-2 {
+position 5120,0
+scale 1.500000
+}
+
+# offer shutdown options
+bindsym Mod4+shift+e exec swaynag \
+	-t warning \
+	-m 'What do you want to do?' \
+	-b 'Poweroff' 'systemctl poweroff' \
+	-b 'Reboot' 'systemctl reboot'
+
+# capture PowerOff key
+bindsym XF86PowerOff exec wlogout -l
+
+include /etc/sway/config.d/*
+

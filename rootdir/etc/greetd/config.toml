@@ -1,0 +1,28 @@
+[terminal]
+# The VT to run the greeter on. Can be "next", "current" or a number
+# designating the VT.
+vt = 1
+
+# The default session, also known as the greeter.
+[default_session]
+
+#UNCOMMENT ONE command ->
+
+#AGREETY - literally indistinguishable from TTY
+#command = "agreety --cmd Hyprland"
+
+#TUIGREET - simple
+command = "tuigreet --remember --cmd Hyprland"
+
+#GTKGREET - moderately stylish
+#command = "sway --config /etc/greetd/sway-gtkgreet"
+
+#REGREET - stylish (broken permissions on /var/log/regreet and /var/cache/regreet)
+#command = "sway --config /etc/greetd/sway-regreet"
+
+
+# The user to run the command as. The privileges this user must have depends
+# on the greeter. A graphical greeter may for example require the user to be
+# in the `video` group.
+user = "greetd"
+
