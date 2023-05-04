@@ -8,7 +8,6 @@ rpms:
   - xdg-desktop-portal-hyprland
   - xorg-x11-server-Xwayland
   - xfce-polkit
-  - greetd
   - libnotify
   - thunar
   - thunar-archive-plugin
@@ -55,7 +54,8 @@ rpms:
   - swappy
   - wf-recorder
   # sway used to display login greeter, then exit
-  #- sway
+  - sway
+  - greetd
   # nwg-displays & udiskie dep
   - wlr-randr
   # udiskie dep

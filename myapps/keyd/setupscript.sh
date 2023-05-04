@@ -10,6 +10,10 @@ for item in "$currentdir"/*; do
     fi
 done
 
+
+chmod +x "/usr/bin/keyd"
+chmod +x "/usr/bin/keyd-application-mapper"
+
 # keyd setup
 groupadd keyd
 systemctl enable keyd.service

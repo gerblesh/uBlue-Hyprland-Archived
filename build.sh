@@ -22,7 +22,7 @@ for pkg in $(echo -e "$flatpaks"); do \
 done
 
 # install apps from local dir
-source="/tmp/apps"
+source="/tmp/myapps"
 customscriptname="setupscript.sh"
 # loop over sub-directories in source
 find "$source" -mindepth 1 -maxdepth 1 -type d | while read subdir; do
@@ -43,10 +43,4 @@ done
 
 # fix ublue base-main booting into a black screen 
 systemctl enable getty@tty1
-
-# fix login greeter
-systemctl set-default graphical.target
-sudo chmod -R go+r /etc/greetd/
-systemctl enable greetd.service
-
 
