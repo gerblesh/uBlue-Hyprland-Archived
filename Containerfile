@@ -4,9 +4,12 @@ FROM ${BASE_CONTAINER_URL}:${FEDORA_MAJOR_VERSION}
 ARG RECIPE
 
 # copy over files
-COPY rootdir/* /
-COPY myapps /tmp/
-COPY homedir /etc/
+COPY rootdir/etc /etc
+COPY rootdir/usr /usr
+RUN mkdir /tmp/myapps
+COPY myapps /tmp/myapps
+RUN mkdir /etc/homedir
+COPY homedir /etc/homedir
 COPY ${RECIPE} /tmp/ublue-recipe.yml
 COPY build.sh /tmp/build.sh
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
