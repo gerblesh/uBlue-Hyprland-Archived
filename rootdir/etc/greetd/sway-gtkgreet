@@ -1,4 +1,5 @@
-# `-l` activates layer-shell mode. Notice that `swaymsg exit` will run after gtkgreet.
+exec "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP"
+xwayland disable
 #exec "gtkgreet -l -s /etc/greetd/gtkgreet.css -c Hyprland; swaymsg exit"
 exec "gtkgreet -l -s /etc/greetd/gtk.css -c Hyprland; swaymsg exit"
 #exec "gtkgreet -l -c Hyprland; swaymsg exit"
