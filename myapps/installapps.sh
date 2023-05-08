@@ -1,7 +1,9 @@
 #!/bin/bash
 
+currentdir=$( dirname -- "$( readlink -f -- "$0"; )"; ) 
+
 # install apps from local dir
-source="/tmp/myapps"
+source="$currentdir"
 customscriptname="setupscript.sh"
 # loop over sub-directories in source
 find "$source" -mindepth 1 -maxdepth 1 -type d | while read subdir; do
