@@ -24,4 +24,5 @@ done
 
 # fix ublue base-main booting into a black screen 
 systemctl enable getty@tty1
-
+systemctl set-default graphical.target
+systemctl enable greetd.service

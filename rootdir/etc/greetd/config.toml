@@ -12,10 +12,10 @@ vt = 1
 #command = "agreety --cmd Hyprland"
 
 #TUIGREET - simple
-command = "tuigreet --remember --cmd Hyprland"
+#command = "tuigreet --remember --cmd Hyprland"
 
 #GTKGREET - moderately stylish
-#command = "sway --config /etc/greetd/sway-gtkgreet"
+command = "sway --config /etc/greetd/sway-gtkgreet"
 
 #REGREET - stylish (broken permissions on /var/log/regreet and /var/cache/regreet)
 #command = "sway --config /etc/greetd/sway-regreet"
