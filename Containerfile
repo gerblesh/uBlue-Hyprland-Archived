@@ -4,7 +4,8 @@ FROM ${BASE_CONTAINER_URL}:${FEDORA_MAJOR_VERSION}
 ARG RECIPE
 
 # copy over files
-COPY rootdir/* /
+COPY rootdir/etc /etc
+COPY rootdir/usr /usr
 COPY homedir/* /etc/skel.d/
 
 COPY ${RECIPE} /tmp/ublue-recipe.yml
