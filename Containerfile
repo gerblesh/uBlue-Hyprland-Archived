@@ -4,8 +4,8 @@ FROM ${BASE_CONTAINER_URL}:${FEDORA_MAJOR_VERSION}
 ARG RECIPE
 
 # copy over files
-COPY rootdir/* /etc
-COPY homedir /etc/skel.d
+COPY rootdir/* /
+COPY homedir/* /etc/skel.d/
 
 COPY ${RECIPE} /tmp/ublue-recipe.yml
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
@@ -14,10 +14,9 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 COPY build.sh /tmp/build.sh
 RUN chmod +x /tmp/build.sh && /tmp/build.sh
 
-# run the myapps copier
+# run the myapps installer
 COPY myapps /tmp/myapps
-COPY myapps.sh /tmp/myapps.sh
-RUN chmod +x /tmp/myapps.sh && /tmp/myapps.sh
+RUN chmod +x /tmp/myapps/installapps.sh && /tmp/myapps/installapps.sh
 
 # clean up and finalize container build
 RUN rm -rf \
