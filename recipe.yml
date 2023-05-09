@@ -11,6 +11,7 @@ rpms:
   - libnotify
   - thunar
   - thunar-archive-plugin
+  - mousepad
   - udiskie
   - wlogout
   - btop
@@ -61,13 +62,14 @@ rpms:
   # udiskie dep
   - libappindicator
 
-  # tests
+  # from my copr, probably broke ass apps
   - keyd
+  - nwg-displays
   
 flatpaks:
   - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
   - com.github.tchx84.Flatseal
   - org.mozilla.firefox
-  - org.xfce.mousepad
+#  - org.xfce.mousepad
 
 
