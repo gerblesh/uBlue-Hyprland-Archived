@@ -6,7 +6,7 @@ ARG RECIPE
 # copy over files
 COPY rootdir/etc /etc
 COPY rootdir/usr /usr
-COPY homedir/* /etc/skel.d/
+COPY homedir /etc/homedir
 
 COPY ${RECIPE} /tmp/ublue-recipe.yml
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
