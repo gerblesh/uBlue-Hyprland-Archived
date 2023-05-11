@@ -68,6 +68,7 @@ setup-nix:
 enable-flatpak-theming:
   flatpak override --filesystem=$HOME/.themes
   flatpak override --filesystem=$HOME/.icons
+  flatpak override --filesystem=$HOME/.fonts
 #  flatpak override --env=XCURSOR_SIZE=32
 
 keyd-user-group:
