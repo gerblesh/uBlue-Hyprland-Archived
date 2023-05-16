@@ -56,6 +56,8 @@ rpms:
   - sway
   - greetd
   - wdisplays
+  - ksshaskpass
+  - kwalletmanager5
 flatpaks:
   - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
   - com.github.tchx84.Flatseal
