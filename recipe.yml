@@ -7,39 +7,37 @@ rpms:
   - waybar-hyprland
   - xdg-desktop-portal-hyprland
   - xorg-x11-server-Xwayland
-  - xfce-polkit
+  - polkit-gnome
   - libnotify
   - thunar
   - thunar-archive-plugin
   - mousepad
   - udiskie
-  - wlogout
-  - btop
+  - htop
   - imv
   - zathura
+  - kvantum
   - qt5ct
   - qt6ct
   - gtk-murrine-engine
-  - neofetch
+  - fastfetch
   - mpv
   - gparted
   - liveusb-creator
   - pavucontrol
-  - wev
-  - mako
-  - copyq
+  - dunst
   - yt-dlp
   - tailscale
   - xarchiver
+  - xdg-user-dirs
+  - xdg-tools
   #- dbus-tools
   # launchers
-  - wofi
   - fuzzel
   # terminals
-  - kitty
-  - alacritty
+  - foot
   # text editor
-  - helix
+  - lite-xl
   # yafti deps
   - python3-pip
   - libadwaita
@@ -57,19 +55,10 @@ rpms:
   # sway used to display login greeter, then exit
   - sway
   - greetd
-  # nwg-displays & udiskie dep
-  - wlr-randr
-  # udiskie dep
-  - libappindicator
-
-  # from my copr, probably broke ass apps
-  - keyd
-  - nwg-displays
-  
+  - wdisplays
 flatpaks:
   - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
   - com.github.tchx84.Flatseal
-  - org.mozilla.firefox
-#  - org.xfce.mousepad
+  - com.brave.Browser
 
 
