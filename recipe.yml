@@ -8,6 +8,11 @@ rpms:
   - xdg-desktop-portal-hyprland
   - xorg-x11-server-Xwayland
   - polkit-gnome
+  - libseat
+  - network-manager-applet
+  - system-config-printer
+  - firewall-config
+  - blueman
   - libnotify
   - thunar
   - thunar-archive-plugin
