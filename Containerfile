@@ -11,8 +11,7 @@ COPY homedir /etc/homedir
 COPY ${RECIPE} /tmp/ublue-recipe.yml
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
  
-# enable sddm
-RUN systemctl enable sddm
+
 
 # run the build script
 COPY build.sh /tmp/build.sh
@@ -21,6 +20,9 @@ RUN chmod +x /tmp/build.sh && /tmp/build.sh
 # run the myapps installer
 COPY myapps /tmp/myapps
 RUN chmod +x /tmp/myapps/installapps.sh && /tmp/myapps/installapps.sh
+
+# enable sddm
+RUN systemctl enable sddm
 
 # clean up and finalize container build
 RUN rm -rf \
