@@ -20,7 +20,7 @@ rpms:
   - thunar
   - thunar-archive-plugin
   - mousepad
-  - udiskie
+  - thunar-volman
   - htop
   - imv
   - zathura
@@ -61,7 +61,7 @@ rpms:
   - wf-recorder
   # sway used to display login greeter, then exit
   - sway
-  - greetd
+  - sddm
   - wdisplays
   - ksshaskpass
   - kwalletmanager5

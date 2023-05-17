@@ -11,9 +11,8 @@ COPY homedir /etc/homedir
 COPY ${RECIPE} /tmp/ublue-recipe.yml
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
  
-# add + configure greetd user
-
-RUN useradd greetd
+# enable sddm
+RUN systemctl enable sddm
 
 # run the build script
 COPY build.sh /tmp/build.sh
@@ -28,6 +27,3 @@ RUN rm -rf \
         /tmp/* \
         /var/* && \
     ostree container commit
-
-
-
