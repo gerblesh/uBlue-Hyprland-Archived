@@ -7,6 +7,9 @@ rpms:
   - waybar-hyprland
   - xdg-desktop-portal-hyprland
   - xorg-x11-server-Xwayland
+  - swaybg
+  - swayidle
+  - swaylock
   - polkit-gnome
   - libseat
   - network-manager-applet
@@ -28,7 +31,6 @@ rpms:
   - fastfetch
   - mpv
   - gparted
-  - liveusb-creator
   - pavucontrol
   - dunst
   - yt-dlp
@@ -55,7 +57,7 @@ rpms:
   # screenshotting 
   - grim
   - slurp
-  - swappy
+  - grimshot
   - wf-recorder
   # sway used to display login greeter, then exit
   - sway
@@ -67,5 +69,6 @@ flatpaks:
   - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
   - com.github.tchx84.Flatseal
   - com.brave.Browser
+  - org.fedoraproject.MediaWriter
 
 

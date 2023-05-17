@@ -9,10 +9,10 @@ vt = 1
 #UNCOMMENT ONE command ->
 
 #AGREETY - literally indistinguishable from TTY
-command = "agreety --cmd Hyprland"
+#command = "agreety --cmd Hyprland"
 
 #TUIGREET - simple
-#command = "tuigreet --remember --cmd Hyprland"
+command = "tuigreet --remember --cmd Hyprland"
 
 #GTKGREET - moderately stylish
 #command = "sway --config /etc/greetd/sway-gtkgreet"
