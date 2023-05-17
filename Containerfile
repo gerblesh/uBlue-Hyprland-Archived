@@ -10,6 +10,10 @@ COPY homedir /etc/homedir
 
 COPY ${RECIPE} /tmp/ublue-recipe.yml
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
+ 
+# add + configure greetd user
+
+RUN useradd greetd
 
 # run the build script
 COPY build.sh /tmp/build.sh
