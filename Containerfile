@@ -25,5 +25,5 @@ RUN rm -rf \
         /var/* && \
     ostree container commit
 
-RUN chcon -t xdm_exec_t /usr/bin/greetd
+
 
