@@ -24,3 +24,4 @@ RUN rm -rf \
         /tmp/* \
         /var/* && \
     ostree container commit
+
