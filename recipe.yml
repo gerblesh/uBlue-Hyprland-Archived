@@ -53,16 +53,17 @@ rpms:
   - libvirt-client
   - libvirt-daemon-kvm
   # screenshotting 
-  - grim
-  - slurp
   - grimshot
   - wf-recorder
   # sway used to display login greeter, then exit
-  - sway
+#  - sway
 #  - sddm
   - wdisplays
   - ksshaskpass
   - kwalletmanager5
+  # fonts
+  - overpass-fonts
+  - overpass-mono-fonts
 flatpaks:
   - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
   - com.github.tchx84.Flatseal

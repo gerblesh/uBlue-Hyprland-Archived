@@ -1,0 +1,43 @@
+@import "./sliders.scss"
+
+
+.button label{
+  transition: all 0.3s ease;
+  color: $tertiary;
+  padding: 5px;
+}
+
+.button:hover label {
+  color: $accent;
+}
+
+.inner-box{
+  background-color: $main;
+  border-radius: 20px; 
+  border: $tertiary solid 3px;
+  padding: 5px;
+}
+//media player
+
+.title {
+  font-size: 26px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+.media-play {
+  background-color: $accent;
+  min-width: 65px;
+  transition: all 0.5s ease;
+  border-radius: 22px;
+  label {
+    color: $main;
+  }
+}
+
+.Paused {
+  border-radius: 40px;
+}
+
