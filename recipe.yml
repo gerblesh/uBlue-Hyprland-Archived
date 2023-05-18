@@ -19,7 +19,6 @@ rpms:
   - libnotify
   - thunar
   - thunar-archive-plugin
-  - mousepad
   - thunar-volman
   - htop
   - imv
@@ -34,7 +33,6 @@ rpms:
   - pavucontrol
   - dunst
   - yt-dlp
-  - tailscale
   - xarchiver
   - xdg-user-dirs
   - xdg-tools
@@ -61,7 +59,7 @@ rpms:
   - wf-recorder
   # sway used to display login greeter, then exit
   - sway
-#  - sddm
+  - sddm
   - wdisplays
   - ksshaskpass
   - kwalletmanager5

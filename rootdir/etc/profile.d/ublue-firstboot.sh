@@ -8,5 +8,5 @@
 #fi
 
 if test "$(id -u)" -gt "0" && test -d "$HOME"; then
-	cp /etc/homedir/.config/* "$HOME"/.config/
-	cp /etc/homedir/* "$HOME"/
+	cp -r /etc/homedir/* "$HOME"/
+fi
