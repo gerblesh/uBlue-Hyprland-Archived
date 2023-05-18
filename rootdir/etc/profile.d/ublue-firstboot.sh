@@ -9,4 +9,6 @@
 
 if test "$(id -u)" -gt "0" && test -d "$HOME"; then
 	cp -r /etc/homedir/* "$HOME"/
+	cp -r /etc/homedir/.config/* "$HOME"/.config
+	cp -r /etc/homedir/.local/share/* "$HOME"/.local/share
 fi
