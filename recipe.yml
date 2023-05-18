@@ -59,7 +59,7 @@ rpms:
   - wf-recorder
   # sway used to display login greeter, then exit
   - sway
-  - sddm
+#  - sddm
   - wdisplays
   - ksshaskpass
   - kwalletmanager5
