@@ -69,6 +69,9 @@ rpms:
   - light
   - socat
   - fish
+# android shiz
+  - android-file-transfer
+  - android-tools
 flatpaks:
   - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
   - com.github.tchx84.Flatseal
