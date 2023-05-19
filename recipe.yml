@@ -77,5 +77,6 @@ flatpaks:
   - com.github.tchx84.Flatseal
   - com.brave.Browser
   - org.fedoraproject.MediaWriter
+  - org.kde.KStyle.Kvantum
 
 
