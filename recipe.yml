@@ -69,14 +69,19 @@ rpms:
   - light
   - socat
   - fish
+  # general audio shit
+  - sox
+  - pactl
   # android shiz
   - android-file-transfer
   - android-tools
 flatpaks:
   - org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
-  - com.github.tchx84.Flatseal
-  - com.brave.Browser
-  - org.fedoraproject.MediaWriter
-  - org.kde.KStyle.Kvantum
+  - com.github.tchx84.Flatseal/x86_64/stable
+  - com.brave.Browser/x86_64/stable
+  - org.fedoraproject.MediaWriter/x86_64/stable
+  - org.kde.KStyle.Kvantum/x86_64/5.15-22.08
+  - com.github.GradienceTeam/x86_64/stable
+  - com.obsproject.Studio/x86_64/stable
 
 
