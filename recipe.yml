@@ -1,7 +1,7 @@
 name: ublue-hyprland
 base-container: ghcr.io/ublue-os/base-main
 fedora-version: 38
-description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
+description: My own personal hyprland image! Download at your own risk! https://ublue.it/making-your-own/
 rpms:
   - hyprland
   - waybar-hyprland
@@ -56,20 +56,20 @@ rpms:
   - grimshot
   - wf-recorder
   # sway used to display login greeter, then exit
-#  - sway
-#  - sddm
+  #  - sway
+  #  - sddm
   - wdisplays
   - ksshaskpass
   - kwalletmanager5
   # fonts
   - overpass-fonts
   - overpass-mono-fonts
-# dependencies for eww config:
+  # dependencies for eww config:
   - ripgrep
   - light
   - socat
   - fish
-# android shiz
+  # android shiz
   - android-file-transfer
   - android-tools
 flatpaks:
