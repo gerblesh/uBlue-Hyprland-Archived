@@ -19,6 +19,7 @@ RUN chmod +x /tmp/build.sh && /tmp/build.sh
 COPY myapps /tmp/myapps
 RUN chmod +x /tmp/myapps/installapps.sh && /tmp/myapps/installapps.sh
 
+
 # clean up and finalize container build
 RUN rm -rf \
         /tmp/* \
