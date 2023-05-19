@@ -12,6 +12,6 @@ includes a lot of programs I use:
 - ksshaskpass
 - lite-xl
 - android stuff (android udev rules, stuff for setting up ADB,android tools, android-file-transfer, etc)
-- + all of the amazing uBlue stuff!
+- all of the amazing uBlue stuff!
 
 
