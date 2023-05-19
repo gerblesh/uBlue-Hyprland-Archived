@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo systemd-sysusers
+
+# Add your user to the adbusers group
+sudo gpasswd -a $(whoami) adbusers
+    
+# Restart UDEV
+sudo udevadm control --reload-rules
+sudo systemctl restart systemd-udevd.service
