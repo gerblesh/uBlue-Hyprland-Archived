@@ -26,7 +26,7 @@ done
 #systemctl enable getty@tty1
 
 #this here has no effect, user has to run it: systemctl set-default graphical.target
-#systemctl enable greetd.service
-systemctl enable ublue-sddm-workaround.service
+systemctl enable greetd.service
+#systemctl enable ublue-sddm-workaround.service
 #systemctl set-default graphical.target
 

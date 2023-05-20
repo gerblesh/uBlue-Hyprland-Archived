@@ -36,7 +36,8 @@ rpms:
   - xarchiver
   - xdg-user-dirs
   - xdg-tools
-  #- dbus-tools
+  - greetd
+  - greetd-selinux
   # launchers
   - fuzzel
   # terminals
@@ -47,17 +48,17 @@ rpms:
   - python3-pip
   - libadwaita
   # virtualisation
-  - virt-install
-  - virt-manager
-  - virt-viewer
-  - libvirt-client
-  - libvirt-daemon-kvm
+  #  - virt-install
+  #  - virt-manager
+  #  - virt-viewer
+  #  - libvirt-client
+  # - libvirt-daemon-kvm
   # screenshotting 
   - grimshot
   - wf-recorder
   # sway used to display login greeter, then exit
   #  - sway
-  - sddm
+  #  - sddm
   - wdisplays
   - ksshaskpass
   - kwalletmanager5
