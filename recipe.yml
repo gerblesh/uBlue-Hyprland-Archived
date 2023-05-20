@@ -56,12 +56,12 @@ rpms:
   # screenshotting 
   - grimshot
   - wf-recorder
-  # sway used to display login greeter, then exit
+  # graphical login is... troubled at the moment
   #  - sway
-  - sddm
-  - qt5-qtgraphicaleffects
-  - qt5-qtsvg
-  - qt5-qtquickcontrols2
+  # - sddm
+  # - qt5-qtgraphicaleffects
+  # - qt5-qtsvg
+  # - qt5-qtquickcontrols2
   - wdisplays
   - ksshaskpass
   - kwalletmanager5
