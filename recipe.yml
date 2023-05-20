@@ -59,6 +59,9 @@ rpms:
   # sway used to display login greeter, then exit
   #  - sway
   - sddm
+  - qt5-qtgraphicaleffects
+  - qt5-qtsvg
+  - qt5-qtquickcontrols2
   - wdisplays
   - ksshaskpass
   - kwalletmanager5
