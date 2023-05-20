@@ -1,0 +1,12 @@
+# fixes multi-user.target, issues because no graphical login :(
+[Unit]
+Description=Work around broken sddm install
+Before=sddm.service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/ublue-sddm-workaround.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
